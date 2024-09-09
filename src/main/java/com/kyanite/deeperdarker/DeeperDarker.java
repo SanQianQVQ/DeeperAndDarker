@@ -90,9 +90,6 @@ public class DeeperDarker implements ModInitializer {
 				LootPool.Builder carapacePoolBuilder = LootPool.lootPool()
 						.add(LootItem.lootTableItem(DDItems.WARDEN_CARAPACE)
 								.when(LootItemRandomChanceCondition.randomChance(0.2f)));
-				LootPool.Builder wardenUpgradePoolBuilder = LootPool.lootPool()
-						.add(LootItem.lootTableItem(DDItems.WARDEN_UPGRADE_SMITHING_TEMPLATE))
-						.when(LootItemRandomChanceCondition.randomChance(0.2f));
 
 				tableBuilder.withPool(carapacePoolBuilder);
 				tableBuilder.withPool(wardenUpgradePoolBuilder);
